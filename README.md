@@ -11,7 +11,7 @@ To write and execute an Embedded C Program for Serial Transfer of Single Byte / 
 ## PROGRAM
 
 ### (i) Serial Port Transfer a Single Character
-
+```
 ORG 00H
 MOV TMOD, #20H
 MOV TH1, #0FDH
@@ -24,9 +24,9 @@ JNB TI, WAIT_TI
 CLR TI
 SJMP MAIN_LOOP
 END
-
+```
 ### (ii) Serial Port to Transfer a Message
-
+```
 #include<reg51.h>
 void main(void)
 {
@@ -44,7 +44,7 @@ TI=0;
 }
 while(1);
 }
-
+```
 ### OUTPUT:
 <img width="1199" height="675" alt="Screenshot 2025-10-08 205352" src="https://github.com/user-attachments/assets/3417d4f2-8dff-4ba8-8085-5d40676d4830" />
 
